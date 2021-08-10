@@ -13,25 +13,25 @@ import (
 
 func main() {
 	contaCaractere()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	qualIdade()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	quilometragem()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	times()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	addJogadores()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	qteVezesQueApareceNoMapa()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	maior(25, 50, 15)
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	multiploDe()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	listaDeMercadoComForTrad()
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	mostraSequencia(10)
-	fmt.Println("----------------------------------")
+	fmt.Println("")
 	validacao()
 
 }
@@ -140,7 +140,7 @@ func listaDeMercadoComForTrad() {
 func mostraSequencia(num int) {
 	temp := " "
 
-	for i := 0; i < num; i++ {
+	for i := 0; i <= num; i++ {
 
 		temp += strconv.Itoa(i) + " "
 		fmt.Println(temp)
