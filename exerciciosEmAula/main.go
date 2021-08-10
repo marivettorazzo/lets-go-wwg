@@ -1,33 +1,32 @@
 package main
 
-// exercícios extras
-// Exercício 1 quilometragem
 import (
 	"fmt"
 	"strconv"
 	"time"
 )
 
+// exercicios extras
 func main() {
-	// qualIdade()
-	// fmt.Println("-----------------")
-	// quilometragem()
-	// fmt.Println("-----------------")
-	// times()
-	// fmt.Println("-----------------")
-	// addJogadores()
-	// fmt.Println("-----------------")
-	// qteVezesQueApareceNoMapa()
-	// fmt.Println("-----------------")
-	// maior(25, 50, 15)
-	// fmt.Println("-----------------")
-	// multiploDe()
-	// fmt.Println("-----------------")
-	// listaDeMercadoComForTrad()
-	// fmt.Println("-----------------")
-	// mostraSequencia(10)
-	// fmt.Println("-----------------")
-	// validacao()
+	qualIdade()
+	fmt.Println("-----------------")
+	quilometragem()
+	fmt.Println("-----------------")
+	times()
+	fmt.Println("-----------------")
+	addJogadores()
+	fmt.Println("-----------------")
+	qteVezesQueApareceNoMapa()
+	fmt.Println("-----------------")
+	maior(25, 50, 15)
+	fmt.Println("-----------------")
+	multiploDe()
+	fmt.Println("-----------------")
+	listaDeMercadoComForTrad()
+	fmt.Println("-----------------")
+	mostraSequencia(10)
+	fmt.Println("-----------------")
+	validacao()
 
 }
 
