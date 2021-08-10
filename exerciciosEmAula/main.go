@@ -1,32 +1,37 @@
 package main
 
+// exercícios extras
+// Exercício 1 quilometragem
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strconv"
+	"strings"
 	"time"
 )
 
-// exercicios extras
 func main() {
-	qualIdade()
-	fmt.Println("-----------------")
-	quilometragem()
-	fmt.Println("-----------------")
-	times()
-	fmt.Println("-----------------")
-	addJogadores()
-	fmt.Println("-----------------")
-	qteVezesQueApareceNoMapa()
-	fmt.Println("-----------------")
-	maior(25, 50, 15)
-	fmt.Println("-----------------")
-	multiploDe()
-	fmt.Println("-----------------")
-	listaDeMercadoComForTrad()
-	fmt.Println("-----------------")
-	mostraSequencia(10)
-	fmt.Println("-----------------")
-	validacao()
+	// qualIdade()
+	// fmt.Println("-----------------")
+	// quilometragem()
+	// fmt.Println("-----------------")
+	// times()
+	// fmt.Println("-----------------")
+	// addJogadores()
+	// fmt.Println("-----------------")
+	// qteVezesQueApareceNoMapa()
+	// fmt.Println("-----------------")
+	// maior(25, 50, 15)
+	// fmt.Println("-----------------")
+	// multiploDe()
+	// fmt.Println("-----------------")
+	// listaDeMercadoComForTrad()
+	// fmt.Println("-----------------")
+	// mostraSequencia(10)
+	// fmt.Println("-----------------")
+	// validacao()
+	contaCaractere()
 
 }
 
@@ -163,4 +168,32 @@ func validacao() {
 func valida(num int) int {
 	a := num % 2
 	return a
+}
+
+func contaCaractere() {
+	var arrRepetidos []string
+	alfabeto := [26]string{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
+
+	texto := strings.ToLower(leiaLinha())
+	arrRepetidos = append(arrRepetidos, texto)
+	for i := 0; i < len(arrRepetidos); i++ {
+		temp := arrRepetidos[i]
+		for j := 0; j < len(alfabeto); j++ {
+			comparacao := alfabeto[j]
+			teste := strings.Count(temp, comparacao)
+			if teste != 0 {
+				fmt.Printf("%s = %d ,", comparacao, teste)
+			}
+
+		}
+
+	}
+
+}
+func leiaLinha() string {
+	fmt.Print("Digite o texto => ")
+	sc := bufio.NewScanner(os.Stdin)
+	sc.Scan()
+	esse := sc.Text()
+	return esse
 }
